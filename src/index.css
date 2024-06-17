@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(41, 37, 37);
+  background-color: rgb(24, 33, 112);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -83,7 +83,7 @@ body {
 
 .square.is-selected {
   color: #fff;
-  background: rgb(25, 235, 235);
+  background: rgb(245, 240, 241);
 }
 
 .winner {
