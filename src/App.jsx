@@ -5,7 +5,11 @@ import { TURNS } from "./constants"
 import { checkWinnerFrom } from "./logic/board"
 
 function App() {
-  const [board, setBoard] = useState(Array(9).fill(null))
+  const [board, setBoard] = useState(() => {
+   const boardFromStorage = window.localStorage.getItem('board')
+   if(boardFromStorage) return JSON.parse(boardFromStorage)
+    return Array(9).fill(null)
+  })
   
   const [turn, setTurn] = useState(TURNS.X)
   const [winner, setWinner] = useState(null)
